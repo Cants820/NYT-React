@@ -1,0 +1,20 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cants820/NYT-React.git"
+  },
+  "author": "Joseph Cantos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cants820/NYT-React/issues"
+  },
+  "homepage": "https://github.com/Cants820/NYT-React#readme"
+}
