@@ -1,6 +1,6 @@
-import axios from 'axios';
+import axios from "axios";
 
-const API = {
+export default {
 
   search:(topic, startYear, endYear) => {
     const APIkey = 'dd5006dd525842fd8a6eb8360611378a'
@@ -15,6 +15,10 @@ const API = {
 
   getSavedArticles: () => {
     return axios.get("/api/article");
-  }
+  },
 
+  removeArticle: id =>{
+    return axios.delete('/api/article/' + id)
+  }
 };
+

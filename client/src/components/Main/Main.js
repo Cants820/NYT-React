@@ -20,11 +20,10 @@ const Main = () =>
   <div>
     <div className='Jumbotron'>
     <h1>NYT-React</h1>
+    <p>New York Times Articles</p>
     </div>
   </div>
 
-
-</div>
-
+</div>;
 
 export default Main;

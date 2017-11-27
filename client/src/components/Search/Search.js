@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from '../../utils/Api';
+import API from '../../utils/API';
 import Result from '../Result'
 
 class Search extends Component {
@@ -73,7 +73,7 @@ class Search extends Component {
       </div>
 
       {this.state.articles ? ( 
-        <SearchResults
+        <Search
         articles = {this.state.articles}
         />
         ):(
