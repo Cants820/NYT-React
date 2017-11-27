@@ -1,20 +1,28 @@
 {
-  "name": "package.json",
+  "name": "nyt-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cants820/NYT-React.git"
+    "server": "node server.js",
+    "client": "node scripts/start-client.js",
+    "start": "concurrently \"nodemon server.js\" \"npm run client\"",
+    "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Joseph Cantos",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cants820/NYT-React/issues"
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
   },
-  "homepage": "https://github.com/Cants820/NYT-React#readme"
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4",
+    "morgan": "^1.9.0",
+    "react-router-dom": "^4.2.2"
+  }
 }
