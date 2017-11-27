@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from '../../utils/API';
+import Api from '../../utils/Api';
 
 class Article extends Component {
 
@@ -9,7 +9,7 @@ constructor(props){
   }
 
   handleSaveArticle = event => {
-    API.saveArticle({
+    Api.saveArticle({
       headline: this.state.headline,
       url: this.state.url,
       publishedDate: this.state.published
@@ -18,7 +18,7 @@ constructor(props){
 
   handleRemoveArticle = event => {
     console.log(this.state.id)
-    API.remove(this.state.id)
+    Api.removeArticle(this.state.id)
     .then(res => this.state.loadArticles())
     .catch(err => console.log(err));
   }

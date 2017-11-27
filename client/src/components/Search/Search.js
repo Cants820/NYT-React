@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from '../../utils/API';
+import Api from '../../utils/Api';
 import Result from '../Result'
 
 class Search extends Component {
@@ -20,7 +20,7 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    API.search(this.state.topic, this.state.startYear,
+    Api.search(this.state.topic, this.state.startYear,
     this.state.endYear)
     .then((res) => {
       this.setState({articles: res.data.response.docs})

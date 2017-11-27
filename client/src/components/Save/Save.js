@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import API from '../../utils/API';
+import Api from '../../utils/Api';
 import Article from '../Article';
 
 class Save extends Component {
@@ -12,7 +12,7 @@ class Save extends Component {
   }
 
   loadArticles = () => {
-    API.getSavedArticles()
+    Api.getSavedArticles()
     .then(res => {
       console.log('results', res)
       this.setState({savedArticles: res.data})
