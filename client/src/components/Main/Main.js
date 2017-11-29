@@ -18,7 +18,7 @@ const Main = () =>
   </nav>
 
   <div>
-    <div className='Jumbotron'>
+    <div className='jumbotron'>
     <h1>NYT-React</h1>
     <p>New York Times Articles</p>
     </div>
