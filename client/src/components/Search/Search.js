@@ -20,7 +20,7 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    Api.search(this.state.topic, this.state.startYear,
+    Api.search(this.state.title, this.state.startYear,
     this.state.endYear)
     .then((res) => {
       this.setState({articles: res.data.response.docs})
