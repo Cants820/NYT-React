@@ -1,9 +1,10 @@
 const router = require("express").Router();
 const articlesController = require("../../controllers/articlesController");
 
-router.route("/")
+router.route("/article")
   .get(articlesController.findAll)
   .post(articlesController.create);
+
 
 router.route('/:id')
 .delete(articlesController.remove);

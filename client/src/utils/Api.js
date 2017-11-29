@@ -10,7 +10,7 @@ export default {
   },
 
   saveArticle: articleObj => {
-    return axios.post("/api/article", articleObj);
+    return axios.post("/api/article/save", articleObj);
   },
 
   getSavedArticles: () => {
