@@ -5,7 +5,7 @@ import Result from '../Result'
 class Search extends Component {
 
   state = {
-    topic: '',
+    title: '',
     startYear: '',
     endYear: '',
     articles: [],
@@ -73,7 +73,7 @@ class Search extends Component {
       </div>
 
       {this.state.articles ? ( 
-        <Search
+        <Result
         articles = {this.state.articles}
         />
         ):(
