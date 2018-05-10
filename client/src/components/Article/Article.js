@@ -13,7 +13,7 @@ constructor(props){
       headline: this.state.headline,
       url: this.state.url,
       publishedDate: this.state.published
-    });
+    })
   }
 
   handleRemoveArticle = event => {

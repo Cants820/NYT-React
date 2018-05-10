@@ -9,9 +9,15 @@
 //     return axios.get(queryURL);
 //   },
 
+<<<<<<< HEAD
 //   saveArticle: articleObj => {
 //     return axios.post("/api/article", articleObj);
 //   },
+=======
+  saveArticle: articleObj => {
+    return axios.post("/api/article/save", articleObj);
+  },
+>>>>>>> d3f7ea19838346839831f05df55d73bcd082fbc5
 
 //   getSavedArticles: () => {
 //     return axios.get("/api/article");

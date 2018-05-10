@@ -5,7 +5,7 @@ import Result from '../Result'
 class Search extends Component {
 
   state = {
-    topic: '',
+    title: '',
     startYear: '',
     endYear: '',
     articles: [],
@@ -20,7 +20,7 @@ class Search extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    Api.search(this.state.topic, this.state.startYear,
+    Api.search(this.state.title, this.state.startYear,
     this.state.endYear)
     .then((res) => {
       this.setState({articles: res.data.response.docs})
@@ -73,7 +73,7 @@ class Search extends Component {
       </div>
 
       {this.state.articles ? ( 
-        <Search
+        <Result
         articles = {this.state.articles}
         />
         ):(
